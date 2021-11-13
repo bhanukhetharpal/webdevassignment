@@ -12,11 +12,14 @@ class Company {
     set revenue(revenue){
         this.revenue = revenue;
     }
+    get hired(){
+        return this.hiring();
+    }
     
 
     //method
     hiring() {
-        if(grade>50){
+        if(this.grade>50){
         return true ;
         }
         else{
@@ -27,7 +30,10 @@ class Company {
 
 }
 class Google extends Company {
-    constructor()
+    constructor(mainstream){
+        this.mainstream = mainstream;
+    }
+
 }
 class Microsoft extends Company {
     constructor(mainstream){
