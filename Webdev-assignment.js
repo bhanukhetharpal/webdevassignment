@@ -2,20 +2,29 @@ class Company {
     constructor(revenue,employeeno,grade){
         this.revenue = revenue;
         this.employeeno = employeeno;
-        this.grade = ;
+        this.grade = grade;
     }
     //getter
     get revenue() {
         return this.revenue;
     }
     //setter
+    set revenue(revenue){
+        this.revenue = revenue;
+    }
     
 
     //method
     hiring() {
-        if(grade>50)
+        if(grade>50){
         return true ;
+        }
+        else{
+            return false;
+        }
+
     }
+
 }
 class Google extends Company {
     constructor()
